@@ -1,0 +1,6 @@
+FROM mono:latest
+
+RUN mkdir /dol
+ADD ./workspace/DOLSharp/Debug /dol
+WORKDIR /dol
+CMD ["mono", "DOLServer.exe", "--start", "-config=/dol/config/serverconfig.xml"]
