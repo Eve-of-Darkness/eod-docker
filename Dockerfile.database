@@ -1,3 +1,3 @@
 FROM mysql:5.7
 
-ADD ./assets/sql/dol.sql.gz /docker-entrypoint-initdb.d/dol.sql.gz
+ADD ./workspace/db-public/public-db.sql /docker-entrypoint-initdb.d/public-db.sql

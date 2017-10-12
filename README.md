@@ -5,6 +5,7 @@ This repo is a one-stop place to build Dawn of Light and run it with Docker.
 ## TL;DR
 ```bash
 ./bin/compile.sh
+./bin/compile_database.sh
 docker-compose up database
 # Wait some time for the data to load, you'll see a message near the bottom
 # that says something along the lines of:
@@ -26,6 +27,13 @@ directory for use by the Dockerfile:
 ```
 ./workspace/DOLSharp/Debug/
 ```
+
+If you want to use the database you will also want to compile the Eve of
+Darkness public database script.  This can be done by running
+`./bin/compile_database.sh` from the root lvel of this project dirctory.
+
+This fetches the database project from github and builds mysql script that
+can build and populate a mysql database.
 
 Once Dawn of light is built you can now build the Dawn of Light docker image
 or use the provided `docker-compose.yml` to start up the Dawn of Light Service.
