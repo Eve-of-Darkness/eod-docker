@@ -18,7 +18,7 @@ docker-compose up server
 
 Before building any docker images you need to fetch and grab the latest stable
 working source for Dawn of Light.  This whole process is taken care of for you
-by running `./bin/comiple.sh` from the root level of this project directory.
+by running `./bin/compile.sh` from the root level of this project directory.
 
 This will fetch the source from the Eve of Darkness team repo; use the mono
 docker image to compile it, and stage everything neatly into the following
@@ -30,14 +30,14 @@ directory for use by the Dockerfile:
 
 If you want to use the database you will also want to compile the Eve of
 Darkness public database script.  This can be done by running
-`./bin/compile_database.sh` from the root lvel of this project dirctory.
+`./bin/compile_database.sh` from the root level of this project dirctory.
 
 This fetches the database project from github and builds mysql script that
 can build and populate a mysql database.
 
 Once Dawn of light is built you can now build the Dawn of Light docker image
 or use the provided `docker-compose.yml` to start up the Dawn of Light Service.
-If you are yousing docker-compose, start the provided database first and give
+If you are using docker-compose, start the provided database first and give
 it some time to populate the database.  This is done by running:
 
 ```bash
@@ -50,7 +50,7 @@ message of:
 > [Note] mysqld: ready for connections.
 
 This will appear near the bottom of the console output of the database once it
-has quieted down.  Once it has you can stop the database by pressing `ctrl + c`.
+has quietened down.  Once it has you can stop the database by pressing `ctrl + c`.
 Now the whole thing can be started up with:
 
 ```
