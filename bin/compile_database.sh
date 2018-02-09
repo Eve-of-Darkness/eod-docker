@@ -12,4 +12,4 @@ fi
 
 rm -rf workspace/db-public
 git clone https://github.com/Eve-of-Darkness/db-public.git workspace/db-public
-(cd workspace/db-public && ./src/scripts/concat.sh)
+(cd workspace/db-public/src/scripts/bin/linux && ./concat)

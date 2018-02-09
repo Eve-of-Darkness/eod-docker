@@ -1,3 +1,3 @@
 FROM mysql:5.7
 
-ADD ./workspace/db-public/public-db.sql /docker-entrypoint-initdb.d/public-db.sql
+ADD ./workspace/db-public/src/scripts/bin/linux/public-db.sql /docker-entrypoint-initdb.d/public-db.sql

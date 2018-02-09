@@ -3,11 +3,14 @@ services:
   database:
     environment:
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dol
     build:
       context: .
       dockerfile: Dockerfile.database
     expose:
       - "3306"
+    ports:
+      - 3306:3306
   server:
     build:
       context: .
